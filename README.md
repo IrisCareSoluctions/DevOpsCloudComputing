@@ -1,5 +1,3 @@
-# DevOpsCloudComputing
-
 # IrisCare Soluctions
 
     O IrisCare é um aplicativo móvel desenvolvido para a prevenção e controle do Retinoblastoma, uma forma de câncer ocular, por meio da análise de imagem, controle periódico e encaminhamento para a Secretaria Municipal e GRAACC.
@@ -11,7 +9,7 @@
 
 # <span style="color: #63C71F;">Pitch</span>
 
-[Assista ao video Pitch](https://youtu.be/0_QOPCaIbMc)
+[Assista ao video Pitch]( )
 
 # <span style="color: #63C71F;">Demonstração do Backend</span>
 
@@ -183,12 +181,6 @@ Descrição: Atualiza o atributo "active" de um usuário para false ou true.
     
 
 </div>
-
-
-# <span style="color: #63C71F;">Pitch</span>
-
-
-[Assista ao video Pitch](https://youtu.be/0_QOPCaIbMc)
 
 
 
