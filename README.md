@@ -1,10 +1,11 @@
 # DevOpsCloudComputing
 
-## Descrição do projeto
+# IrisCare Soluctions
 
-O projeto IrisCare Solutions tem como principal objetivo a prevenção do Retinoblastoma por meio da análise de imagem, visando a detecção precoce desse tipo de câncer ocular em crianças pequenas. O projeto propõe o desenvolvimento de um aplicativo móvel acessível e fácil de usar, permitindo aos pais e cuidadores capturar imagens dos olhos das crianças para identificar possíveis sintomas da doença.
+    O IrisCare é um aplicativo móvel desenvolvido para a prevenção e controle do Retinoblastoma, uma forma de câncer ocular, por meio da análise de imagem, controle periódico e encaminhamento para a Secretaria Municipal e GRAACC.
 
-A iniciativa busca resolver problemas como a falta de conscientização e detecção precoce do Retinoblastoma, além do acesso limitado a instalações médicas especializadas para diagnóstico e tratamento. O aplicativo não apenas permite a captura de imagens, mas também oferece um registro abrangente dos resultados de análises e exames recomendados, facilitando a comunicação com profissionais de saúde e possibilitando uma transferência mais rápida para centros de tratamento especializados.
+
+<img align="center" src="https://github.com/IrisCareSoluctions/HybridMobile/blob/main/assets/evidencia4.png" />
 
 <br/>
 
@@ -133,32 +134,70 @@ Descrição: Atualiza o atributo "active" de um usuário para false ou true.
 
 ...
 
-Para um detalhamento completo dos endpoints feito pelo swagger, após a execução da aplicação Java, acesse a interface do swagger da aplicação pelo link : http://localhost:8080/swagger-ui/index.html#/.
+## Para documentação completa do projeto acessar:    
+  https://api-iriscare.azurewebsites.net/swagger-ui/index.html#/
+
+---
+# Desenvolvedores:
+
+    -> RM: 93915 -  JAELSON DOS SANTOS
+
+    -> RM: 94311 - MARCOS BILOBRAM
+
+    -> RM: 96320 - NATHÁLIA MAIA
+
+    -> RM: 94972 - RAFAELA DA SILVA
+
+    -> RM: 93613 - VINICIUS DE OLIVEIRA
 
 
-# <span style="color: #63C71F;">Equipe</span>
 
-     A equipe responsável por esse projeto é composta por:
+<div align="center"> 
+    <a href="https://github.com/JaelsonJonas">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/101295166?v=4" />
+    </a>
+    <a href="https://github.com/marcosbilobram">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/92834827?v=4" />
+    </a>
+    <a href="https://github.com/natmaia">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/105464103?s=96&v=4" />
+    </a>
+    <a href="https://github.com/gsrafaela">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99452621?v=4" />
+    </a>
+    <a href="https://github.com/ViniOlr">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81593244?v=4" />
+    </a>
+</div>
 
-- <span style="color: #63C71F;">RM: 93915 - Jaelson dos Santos </span> 
-- <span style="color: #63C71F;">RM: 94311 - Marcos Bilobram </span> 
-- <span style="color: #63C71F;">RM: 96320 - Nathália Maia </span> 
-- <span style="color: #63C71F;">RM: 94972 - Rafaela da Silva </span>
-- <span style="color: #63C71F;">RM: 93613 - Vinicus de Oliveira </span>
+## Tecnologias Utilizadas 
+          
+<div align="center" > 
+    <img  align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" />    
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" />
+    
 
-        Cada membro da equipe desempenha um papel fundamental no desenvolvimento e no sucesso do projeto, contribuindo com suas habilidades e conhecimentos na área de tecnologia.
+</div>
 
-<br/>
 
 # <span style="color: #63C71F;">Pitch</span>
 
+
 [Assista ao video Pitch](https://youtu.be/0_QOPCaIbMc)
+
+
 
 # <span style="color: #63C71F;">Considerações Finais</span>
 
         O desenvolvimento do Iriscare é um projeto realizado como parte da prova semestral da faculdade FIAP, com o tema "“Inovação e Tecnologia Moldandoo Futuro da Saúde: Prevenção,Automação e Precisão".
 
         A equipe se empenhou para criar uma solução eficiente e inovadora, que visa promover o combate ao retinoblastoma.
+        
 
 O projeto Iriscare está disponível na íntegra, incluindo todos os códigos-fonte e entregas, na organização do GitHub: 
 https://github.com/IrisCareSoluctions.
