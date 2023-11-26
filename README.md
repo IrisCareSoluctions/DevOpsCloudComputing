@@ -1,169 +1,274 @@
-# DevOpsCloudComputing
+# IrisCare Soluctions
 
-## Descrição do projeto
+    O IrisCare é um aplicativo móvel desenvolvido para a prevenção e controle do Retinoblastoma, uma forma de câncer ocular, por meio da análise de imagem, controle periódico e encaminhamento para a Secretaria Municipal e GRAACC.
 
-O projeto IrisCare Solutions tem como principal objetivo a prevenção do Retinoblastoma por meio da análise de imagem, visando a detecção precoce desse tipo de câncer ocular em crianças pequenas. O projeto propõe o desenvolvimento de um aplicativo móvel acessível e fácil de usar, permitindo aos pais e cuidadores capturar imagens dos olhos das crianças para identificar possíveis sintomas da doença.
 
-A iniciativa busca resolver problemas como a falta de conscientização e detecção precoce do Retinoblastoma, além do acesso limitado a instalações médicas especializadas para diagnóstico e tratamento. O aplicativo não apenas permite a captura de imagens, mas também oferece um registro abrangente dos resultados de análises e exames recomendados, facilitando a comunicação com profissionais de saúde e possibilitando uma transferência mais rápida para centros de tratamento especializados.
+<img align="center" src="https://github.com/IrisCareSoluctions/HybridMobile/blob/main/assets/evidencia4.png" />
+
+----
+
+# <span style="color: #63C71F;">Demonstração WebApp da Azure </span>
+
+[Assista ao video do back-end integrado rodando](https://www.youtube.com/watch?v=kX0do_P3T9E)
+
+---
+
+---
+# Desenvolvedores:
+
+    -> RM: 93915 -  JAELSON DOS SANTOS
+
+    -> RM: 94311 - MARCOS BILOBRAM
+
+    -> RM: 96320 - NATHÁLIA MAIA
+
+    -> RM: 94972 - RAFAELA DA SILVA
+
+    -> RM: 93613 - VINICIUS DE OLIVEIRA
+
+
+
+<div align="center"> 
+    <a href="https://github.com/JaelsonJonas">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/101295166?v=4" />
+    </a>
+    <a href="https://github.com/marcosbilobram">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/92834827?v=4" />
+    </a>
+    <a href="https://github.com/natmaia">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/105464103?s=96&v=4" />
+    </a>
+    <a href="https://github.com/gsrafaela">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99452621?v=4" />
+    </a>
+    <a href="https://github.com/ViniOlr">
+        <img align="center" height="100" width="100" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81593244?v=4" />
+    </a>
+</div>
+
+# Endpoints
+
+    Para teste de CRUD principal escolhemos o User.
+
+    ## Endpoints da API
+
+| Método   | Endpoint                                     | Descrição                                      |
+|----------|----------------------------------------------|------------------------------------------------|
+| `POST`   | `/api/user/login`                            | Autentica um usuário.                          |
+| `POST`   | `/api/user/signup`                           | Registra um novo usuário.                      |
+| `GET`    | `/api/user/{id}`                             | Obtém detalhes de um usuário específico.       |
+| `PUT`    | `/api/user/{id}`                             | Atualiza detalhes de um usuário específico.    |
+| `DELETE` | `/api/user/{id}`                             | Desativa um usuário específico.                |
 
 <br/>
+<br/>
 
-# <span style="color: #63C71F;">Pitch</span>
+# Instruções de utilização
 
-[Assista ao video Pitch](https://youtu.be/0_QOPCaIbMc)
+1. Clone o repositorio da API apringboot
+`https://github.com/IrisCareSoluctions/DigitalBusiness.git`
+2. Abra o terminal, navegue até o diretorio da pasta do repositorio e rode o **springboot** com o seguinte comando: 
+`.\mvnw spring-boot:run
+3. Clone ester repositorio **react-native expo** 
+`https://github.com/IrisCareSoluctions/HybridMobile.git` 
+4. Abra o repositorio e rode os seguintes comandos:
+   - `npm install` -> baixar as bibliotecas presentes  o projeto
+   - `npx expo start` -> abrindo o projeto com expo
+   - escolha a opção que preferir, ler o QRCODE, ou digite `a` para abrir o emulador
 
-# <span style="color: #63C71F;">Demonstração do Backend</span>
+`
+`
 
-[Assista ao video do back-end integrado rodando](https://www.youtube.com/watch?v=T-gVGc_Rwao)
+### Tela de Autenticação
+---
+
+Permitir que os usuários façam login com authentication token.
+
+- Campos:
+  - e-mail 
+  - Senha
+
+- Operação:
+  - Enviar solicitação de autenticação para `POST http://localhost:8080/api/user/login`.
+
+```
+{
+  "email": "string",
+  "password": "string"
+}
+```
+
+### Tela de Registro de Usuário
+---
+
+Permitir que novos usuários se registrem.
+
+- Campos:
+  - Nome Completo
+  - CPF
+  - Data de Nascimento
+  - E-mail
+  - Senha
+    - Endereço:
+      - CEP
+      - Número
+      - Rua
+      - Bairro
+      - Cidade
+      - Estado
+    - Telefone:
+       - DDD
+       - Número
+
+- Operação:
+  - Enviar solicitação de registro para `POST http://localhost:8080/api/user/signup`.
+
+```
+{
+  "name": "string",
+  "cpf": "string",
+  "birthday": "string",
+  "email": "string",
+  "password": "string",
+  "address": {
+    "zipCode": "string",
+    "number": "string",
+    "street": "string",
+    "neighborhood": "string",
+    "city": "string",
+    "state": "string"
+  },
+  "phone": {
+    "ddd": "string",
+    "number": "string"
+  }
+}
+```
+
+### Tela de Detalhes do Usuário
+---
+
+Esta tela obtém detalhes de um usuário específico.
+
+### Campos
+
+- **Nome Completo**
+- **CPF**
+- **Data de Nascimento**
+- **E-mail**
+- **Senha**
+- **Endereço:**
+  - CEP
+  - Número
+  - Rua
+  - Bairro
+  - Cidade
+  - Estado
+- **Telefone:**
+  - DDD
+  - Número
+- **Filhos (se houver):**
+  - Lista de Filhos
 
 
-# <span style="color: #63C71F;">Tecnologias Utilizadas</span>
+- Operação:
+  - Enviar solicitação para obter os dados de registro para `GET http://localhost:8080/api/user/{id}`.
 
+
+```json
+{
+  "name": "string",
+  "cpf": "string",
+  "birthday": "string",
+  "email": "string",
+  "password": "string",
+  "active": true,
+  "phone": {
+    "ddd": "string",
+    "number": "string"
+  },
+  "address": {
+    "zipCode": "string",
+    "number": "string",
+    "street": "string",
+    "neighborhood": "string",
+    "city": "string",
+    "state": "string"
+  },
+    "children": []
+}
+
+```
+
+## Tela de Atualização do Usuário
+
+Esta tela atualiza detalhes de um usuário específico.
+
+- Campos:
+  - Nome Completo
+  - CPF (não será atualizado - valor fixo de criação)
+  - Data de Nascimento (não será atualizado - valor fixo de criação)
+  - E-mail
+  - Senha
+
+
+- Operação:
+  - Enviar solicitação de atualização de registro para `PUT http://localhost:8080/api/user/{id}`.
+
+
+```json
+{
+  "name": "string",
+  "cpf": "string",
+  "birthday": "string",
+  "email": "string",
+  "password": "string"
+}
+```
+
+## Tela de exclução do Usuário
+
+Desativa um usuário específico.
+
+- Campos:
+  - Nome Completo
+  - CPF (não será atualizado - valor fixo de criação)
+  - Data de Nascimento (não será atualizado - valor fixo de criação)
+  - E-mail
+  - Senha
+
+
+- Operação:
+  - Enviar solicitação de exclução de usuario para `DELETE http://localhost:8080/api/user/{id}`.
+
+
+```json
+[
+  {
+    "type": "string",
+    "message": "string"
+  }
+]
+
+```
+## Para documentação completa do projeto acessar:    
+  https://api-iriscare.azurewebsites.net/swagger-ui/index.html#/
+
+
+## Tecnologias Utilizadas 
           
-<div align="center">
-    <img align="center" alt="weplant-java" height="40" width="12%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-    <img align="center" alt="weplant-illustrator" height="40" width="12%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
-    <img align="center" alt="weplant-html5" height="40" width="12%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-    <img align="center" alt="weplant-react" height="40" width="12%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-    <img align="center" alt="weplant-nodejs" height="40" width="12%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-    <img align="center" alt="weplant-nodejs" height="40" width="12%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
-    <img align="center" alt="weplant-nodejs" height="40" width="12%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" />
-          
-          
+<div align="center" > 
+    <img  align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" />    
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+    <img align="center" height="50" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" />
+    
 
 </div>
 
 <br/>
-
-<br/>
-
-# <span style="color: #63C71F;">Configuração e Execução </span>
-
-## Requisitos : 
-
-- Git
-- JDK 17
-- Node.JS
-- Expo
-- IDE de preferência (Ex: VsCode)
-- Android Studio com emulador de Android
-
-## Passo a passo
-
-- [Clone o projeto Java do repositório DigitalBusiness](https://github.com/IrisCareSoluctions/DigitalBusiness)
-- Abra o projeto Java clonado na IDE escolhida e ache a classe "IriscareapiApplication" para inicar a execução do projeto na porta localhost:8080.
-- [Clone o projeto React do repositório DigitalBusiness](https://github.com/IrisCareSoluctions/HybridMobile)
-- Execute o emulador instalado na máquina.
-- Abra o projeto React clonado na IDE escolhida e execute o comando "npm i", logo após, npx expo start. Siga os passos para obter o projeto no emulador.
-
-
-<br/>
-
-# <span style="color: #63C71F;">Endpoints </span>
-
-## UserController
-
-### Método signup:
-Rota: "localhost:8080/user/signup" <br>
-Descrição: Cadastra um novo usuário com base nos dados fornecidos.
-
-```js
-Request Body:
-
-{
-    "name": "John Doe",
-    "cpf": "752.106.910-20",
-    "birthday": "01/01/1990",
-    "email": "john.doe4@example.com",
-    "password": "securepassword",
-    "address": {
-        "zipCode": "12345-678",
-        "number": "123",
-        "street": "Example Street",
-        "neighborhood": "Sample Neighborhood",
-        "city": "Sample City",
-        "state": "Sample State"
-    },
-    "phone": {
-        "ddd": "123",
-        "number": "987654321"
-    }
-}
-
-
-```
-
-### Método login:
-Rota: "localhost:8080/user/login" <br>
-Descrição: Realiza o login do usuário com base nas informações fornecidas.
-
-``` js
-{
-"email" : "email",
-"password" : "senha"
-}
-```
-
-### Método findById:
-Rota: "localhost:8080/user/{**user_id**}" <br>
-Descrição: Retorna um usuário com o ID especificado.
-
-### Método updateUser:
-Rota: "localhost:8080/users/{**user_id**}" <br>
-Descrição: Atualiza um usuário existente com base nos dados fornecidos.
-
-```js
-Request body
- Irá variar de acordo com as informações a se atualizar: 
- 
- {
-  "name": "Jaelson",
-  "cpf": "43133963813",
-  "birthday": "06/06/1996",
-  "email": "livedojonas@hotmail.com",
-  "password": "1234"
-}
-
-
-```
-
-### Método deactivateUser:
-Rota: "localhost:8080/user/{**user_id**}" <br>
-Descrição: Atualiza o atributo "active" de um usuário para false ou true.
-
-...
-
-Para um detalhamento completo dos endpoints feito pelo swagger, após a execução da aplicação Java, acesse a interface do swagger da aplicação pelo link : http://localhost:8080/swagger-ui/index.html#/.
-
-
-# <span style="color: #63C71F;">Equipe</span>
-
-     A equipe responsável por esse projeto é composta por:
-
-- <span style="color: #63C71F;">RM: 93915 - Jaelson dos Santos </span> 
-- <span style="color: #63C71F;">RM: 94311 - Marcos Bilobram </span> 
-- <span style="color: #63C71F;">RM: 96320 - Nathália Maia </span> 
-- <span style="color: #63C71F;">RM: 94972 - Rafaela da Silva </span>
-- <span style="color: #63C71F;">RM: 93613 - Vinicus de Oliveira </span>
-
-        Cada membro da equipe desempenha um papel fundamental no desenvolvimento e no sucesso do projeto, contribuindo com suas habilidades e conhecimentos na área de tecnologia.
-
-<br/>
-
-# <span style="color: #63C71F;">Pitch</span>
-
-[Assista ao video Pitch](https://youtu.be/0_QOPCaIbMc)
-
-# <span style="color: #63C71F;">Considerações Finais</span>
-
-        O desenvolvimento do Iriscare é um projeto realizado como parte da prova semestral da faculdade FIAP, com o tema "“Inovação e Tecnologia Moldandoo Futuro da Saúde: Prevenção,Automação e Precisão".
-
-        A equipe se empenhou para criar uma solução eficiente e inovadora, que visa promover o combate ao retinoblastoma.
-
-O projeto Iriscare está disponível na íntegra, incluindo todos os códigos-fonte e entregas, na organização do GitHub: 
-https://github.com/IrisCareSoluctions.
-
-<br/>
-
 
 
